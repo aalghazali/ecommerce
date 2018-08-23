@@ -1,0 +1,86 @@
+<!DOCTYPE HTML> 
+
+<!--Site made by Abdullah Alghazali-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A used car dealership in Detroit Michigan">
+    <meta name="keywords" content="Car, car, Car Dealer, Used cars">
+    <meta name="author" content="Abdullah Alghazali">
+    <title>Used Auto Dealer</title>
+    <link rel="shortcut icon" href="images/car.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<script type="text/javascript" src="js/library_fields.js"></script>
+	<script type="text/javascript" src="js/library_validate.js"></script>
+	<script type="text/javascript" src="library_validate_form.js"></script>
+	<script type="text/javascript" src="slider.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<header>
+<hgroup>
+   	<h1>Used Auto Dealer</h1>
+	<h2 id="headingtext">&ldquo;Let your next car purchase be from us!&rdquo;</h2>
+</hgroup>
+</header>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+     <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+    </div>
+</nav>
+
+<section>
+<p>Auto Sales has been in the autmobile industry for well over 7 years. We first opened up with two cars to our name. Now, we have over 50 used cars for sale. Here at Auto Sales, we take pride in our used automobiles. We make sure each and every one of our cars is well maintained so you don't run into any problems down the line.<p> 
+
+
+
+<h1>Register!</h1>
+<p class="margin_left">If you'd like to recieve daily updates regarding our newly listed vehicles, please sign up below.</p>
+    	<form action="registration_form.html" method="get"
+        	name="registration_form" id="registration_form" onsubmit="return(validate());">
+
+        		<label for="name">First Name:</label>
+				<input type="text" name="name" id="name" pattern="[A-Za-z]{3}" placeholder="Name" required><br>
+	        	<label for="email">E-Mail Address:</label>
+	        	<input type="email" name="email" id="email" placeholder="Email Address" required><br>				
+				<label for="phone">Phone Number:</label>
+				<input type="tel" name="phone" id="phone" placeholder="999-999-9999"><br>
+
+				<label>&nbsp;</label>
+				<div id="buttons">
+                    <input type="submit" class="submit" value="Submit">
+                    <input type="reset" class="submit" value="Reset Fields"><br>
+                </div>
+		</form>
+
+</section>
+
+
+
+<footer> 
+	<p>Site made by Abdullah Alghazali</p>
+	<p id="top_border"></p>
+</footer>
+
+</body>
+</html>

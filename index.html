@@ -1,0 +1,94 @@
+<!DOCTYPE HTML> 
+
+<!--Site made by Abdullah Alghazali-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A used car dealership in Detroit Michigan">
+    <meta name="keywords" content="Car, car, Car Dealer, Used cars">
+    <meta name="author" content="Abdullah Alghazali">
+    <title>Used Auto Dealer</title>
+    <link rel="shortcut icon" href="images/car.ico">
+	<link rel="stylesheet" href="styles/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<header>
+<hgroup>
+   	<h1>Used Auto Dealer</h1>
+	<h2 id="headingtext">&ldquo;Let your next car purchase be from us!&rdquo;</h2>
+</hgroup>
+</header>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+     <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+    </div>
+</nav>
+<section>
+    <p>Welcome to Auto Sales! Here you will find a vast amount of used automobiles for sale. Whether you're looking for the latest models in cars or for the older models, we have it all!<p>
+
+	
+	<!--Credit to www.w3schools.com for the slideshow-->
+<div class="w3-content w3-display-container">
+<div id="slideshowpics">
+  <img class="mySlides" src="images/1.jpg">
+  <img class="mySlides" src="images/2.jpg">
+</div>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+	
+	
+</section>
+
+
+
+<footer> 
+	<p>Site made by Abdullah Alghazali</p>
+	<p id="top_border"></p>
+</footer>
+</body>
+</html>

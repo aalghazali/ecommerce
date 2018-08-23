@@ -1,0 +1,13 @@
+header img, #mobile, #nav_bar, #aside{
+display:none;
+}
+
+hgroup h2{
+margin-left: -8em;
+}
+
+body{ 
+background-color:#FFFFFF;
+background-image:none; 
+color:#FFFFFF; 
+}
